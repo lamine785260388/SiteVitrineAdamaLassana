@@ -26,6 +26,10 @@ const Index: React.FC = () => {
     <>
         <Header />
         <main className="main">
+    
+
+
+
         <section id="hero" className="hero section dark-background">
     <div id="hero-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
       <div className="carousel-item active">
