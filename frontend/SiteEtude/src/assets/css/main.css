@@ -86,6 +86,110 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+/* Styles pour l'icône du menu mobile */
+.mobile-nav-toggle {
+  display: none; /* Caché par défaut */
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; /* Couleur de l'icône */
+  z-index: 1001; /* Au-dessus de la modale */
+}
+
+@media (max-width: 1199.98px) {
+  .mobile-nav-toggle {
+    display: block; /* Affiché sur mobile */
+  }
+}
+
+/* Styles pour la modale mobile */
+.mobile-menu-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end; /* Aligner le menu à droite */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile-menu-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Contenu du menu mobile */
+.navmenu-mobile {
+  width: 300px; /* Largeur du menu */
+  height: 100%;
+  background-color: #fff; /* Fond blanc */
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%); /* Déplacer le menu hors de l'écran */
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-modal.active .navmenu-mobile {
+  transform: translateX(0); /* Ramener le menu à sa position */
+}
+
+/* Styles pour la liste du menu mobile */
+.navmenu-mobile ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.navmenu-mobile ul li {
+  margin-bottom: 15px;
+}
+
+.navmenu-mobile ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navmenu-mobile ul li a:hover {
+  background-color: #f0f0f0; /* Effet au survol */
+}
+
+/* Styles pour les sous-menus */
+.navmenu-mobile ul li.dropdown ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.navmenu-mobile ul li.dropdown ul li a {
+  font-size: 14px;
+}
+
+/* Icône de fermeture dans le menu mobile */
+.navmenu-mobile .mobile-nav-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Masquer la modale et l'icône sur desktop */
+@media (min-width: 1200px) {
+  .mobile-menu-modal {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
 
 /* PHP Email Form Messages
 ------------------------------*/
