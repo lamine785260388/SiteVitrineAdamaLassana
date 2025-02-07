@@ -245,7 +245,7 @@ const Index: React.FC = () => {
         <div className="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
           <div className="d-flex align-items-center my-3 my-sm-0">
             <a href="index.html">
-              <img src="images/logo.svg" alt="logo" className="img-fluid" />
+              <img src="src/assets/images/logo.svg" alt="logo" className="img-fluid" />
             </a>
           </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -420,51 +420,51 @@ const Index: React.FC = () => {
           <div className="category-carousel swiper">
             <div className="swiper-wrapper">
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assetsimages/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-2.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-2.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Breads &amp; Sweets</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-3.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-3.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-4.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-4.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Beverages</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-5.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-5.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-6.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-6.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Breads</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-7.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-7.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-8.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-8.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Breads &amp; Sweets</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Beverages</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Breads</h4>
               </a>
             </div>
@@ -492,7 +492,7 @@ const Index: React.FC = () => {
               <div className="product-item">
                 <figure>
                   <a href="index.html" title="Product Title">
-                    <img src="images/product-thumb-1.png" alt="Product Thumbnail" className="tab-image" />
+                    <img src="src/assets/images/product-thumb-1.png" alt="Product Thumbnail" className="tab-image" />
                   </a>
                 </figure>
                 <div className="d-flex flex-column text-center">
