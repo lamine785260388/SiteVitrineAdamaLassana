@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
-import '../assets/css/main.css'
 import Footer from "../components/Footer";
 const Story: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
