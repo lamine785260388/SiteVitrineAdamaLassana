@@ -1,25 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Story: React.FC = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [
-      "recent-photos-1.jpg",
-      "recent-photos-2.jpg",
-      "recent-photos-3.jpg",
-      "recent-photos-4.jpg",
-      "recent-photos-5.jpg",
-      "recent-photos-6.jpg",
-      "recent-photos-7.jpg",
-      "recent-photos-8.jpg",
-    ];
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 5000);
-      return () => clearInterval(interval);
-    }, [images.length]);
+    
     
   return (
     <>
