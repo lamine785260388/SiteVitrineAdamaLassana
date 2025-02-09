@@ -244,7 +244,7 @@ const Index: React.FC = () => {
   <span className="fw-bold"> {language === "Français" ? "en Afrique" : "in Africa"}</span>
 </h2>;
 
-<p className="fs-4 bg-white">
+<p className="fs-4 bg-primary">
   {language === "Français" 
     ? "Expertise et innovation au service des infrastructures ferroviaires, du matériel roulant et du génie civil"
     : "Expertise and innovation serving railway infrastructure, rolling stock, and civil engineering"}
