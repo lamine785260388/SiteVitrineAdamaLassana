@@ -228,7 +228,7 @@ const Index: React.FC = () => {
       <div className="row">
         <div className="col-lg-6 pt-5 mt-5">
           <h2 className="display-1 ls-1"><span className="fw-bold text-secondary">Propulser</span> l'avenir ferroviaire <span className="fw-bold">de l'Afrique</span></h2>
-          <p className="fs-4">Expertise et innovation au service des infrastructures ferroviaires.</p>
+          <p className="fs-4">Expertise et innovation au service des infrastructures ferroviaires <span className="fw-bold">chez RAIL DYNAMIC AFRICA</span>.</p>
           <div className="d-flex gap-3">
             <a href="#" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3"> Nos expertises</a>
             <a href="#" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Contactez NOUS</a>
