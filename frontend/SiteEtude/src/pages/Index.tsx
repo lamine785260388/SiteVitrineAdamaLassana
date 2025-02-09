@@ -227,7 +227,7 @@ const Index: React.FC = () => {
     <div className="container-lg">
       <div className="row">
         <div className="col-lg-6 pt-5 mt-5">
-          <h2 className="display-1 ls-1"><span className="fw-bold text-primary">Organic</span> Foods at your <span className="fw-bold">Doorsteps</span></h2>
+          <h2 className="display-1 ls-1"><span className="fw-bold text-primary">Propulser</span> l'avenir ferroviaire <span className="fw-bold">de l'Afrique</span></h2>
           <p className="fs-4">Dignissim massa diam elementum.</p>
           <div className="d-flex gap-3">
             <a href="#" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
@@ -329,7 +329,7 @@ const Index: React.FC = () => {
                 <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-2.jpg" className="rounded-circle" alt="Category Thumbnail" />
+                <img src="/assets/images/category-thumb-2.jpg" className="rounded-circle" alt="Category Thumbnail" />
                 <h4 className="fs-6 mt-3 fw-normal category-title">Breads &amp; Sweets</h4>
               </a>
               <a href="category.html" className="nav-link swiper-slide text-center">
