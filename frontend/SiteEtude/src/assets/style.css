@@ -93,6 +93,48 @@ body {
   font-size: 50px;
   color: white;
 }
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Couleur de fond du footer */
+}
+
+.logo-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-address {
+  text-align: left;
+  max-width: 300px;
+}
+
+.contact-address h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-address p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #555;
+}
+
+.social-links ul {
+  padding: 0;
+  margin: 0;
+}
+
+.social-links .btn {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--bs-primary);

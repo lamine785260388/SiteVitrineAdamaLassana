@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Login from './pages/Login';
 import Index from './pages/Index';
 import Story from './pages/story';
+import Dump from './pages/dump';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
 
         <Route path="/login" Component={Login} />
         <Route path="/story" Component={Story} />
+        <Route path="/dump" Component={Dump} />
 
       </Routes>
     </Router>
