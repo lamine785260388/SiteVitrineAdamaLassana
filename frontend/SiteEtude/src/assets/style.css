@@ -47,6 +47,52 @@ body {
   
   --bs-border-color: #F7F7F7;
 }
+.icon-container {
+  text-align: center;
+  margin: 10px;
+}
+
+.icon-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ccc; /* Couleur par défaut */
+}
+
+.icon-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.bg-green {
+  background-color: #4CAF50; /* Vert */
+}
+
+.bg-yellow {
+  background-color: #FFEB3B; /* Jaune */
+}
+
+.bg-red {
+  background-color: #F44336; /* Rouge */
+}
+
+.bg-orange {
+  background-color: #FF9800; /* Orange */
+}
+
+.icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fa-laptop {
+  font-size: 50px;
+  color: white;
+}
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--bs-primary);

@@ -1,26 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Index: React.FC = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const images = [
-      "recent-photos-1.jpg",
-      "recent-photos-2.jpg",
-      "recent-photos-3.jpg",
-      "recent-photos-4.jpg",
-      "recent-photos-5.jpg",
-      "recent-photos-6.jpg",
-      "recent-photos-7.jpg",
-      "recent-photos-8.jpg",
-    ];
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 5000);
-      return () => clearInterval(interval);
-    }, [images.length]);
-    
+   
+   
   return (
    <div>
   <svg xmlns="http://www.w3.org/2000/svg" style={{display: 'none'}}>
@@ -239,94 +222,16 @@ const Index: React.FC = () => {
       </ul>
     </div>
   </div>
-  <header>
-    <div className="container-fluid">
-      <div className="row py-3 border-bottom">
-        <div className="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
-          <div className="d-flex align-items-center my-3 my-sm-0">
-            <a href="index.html">
-              <img src="src/assets/images/logo.svg" alt="logo" className="img-fluid" />
-            </a>
-          </div>
-          <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <svg width={24} height={24} viewBox="0 0 24 24"><use xlinkHref="#menu" /></svg>
-          </button>
-        </div>
-        <div className="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
-          <div className="search-bar row bg-light p-2 rounded-4">
-            <div className="col-md-4 d-none d-md-block">
-              <select className="form-select border-0 bg-transparent">
-                <option>All Categories</option>
-                <option>Groceries</option>
-                <option>Drinks</option>
-                <option>Chocolates</option>
-              </select>
-            </div>
-            <div className="col-11 col-md-7">
-              <form id="search-form" className="text-center" action="index.html" method="post">
-                <input type="text" className="form-control border-0 bg-transparent" placeholder="Search for more than 20,000 products" />
-              </form>
-            </div>
-            <div className="col-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" /></svg>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <ul className="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark">
-            <li className="nav-item active">
-              <a href="index.html" className="nav-link">Home</a>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle pe-3" role="button" id="pages" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-              <ul className="dropdown-menu border-0 p-3 rounded-0 shadow" aria-labelledby="pages">
-                <li><a href="index.html" className="dropdown-item">About Us </a></li>
-                <li><a href="index.html" className="dropdown-item">Shop </a></li>
-                <li><a href="index.html" className="dropdown-item">Single Product </a></li>
-                <li><a href="index.html" className="dropdown-item">Cart </a></li>
-                <li><a href="index.html" className="dropdown-item">Checkout </a></li>
-                <li><a href="index.html" className="dropdown-item">Blog </a></li>
-                <li><a href="index.html" className="dropdown-item">Single Post </a></li>
-                <li><a href="index.html" className="dropdown-item">Styles </a></li>
-                <li><a href="index.html" className="dropdown-item">Contact </a></li>
-                <li><a href="index.html" className="dropdown-item">Thank You </a></li>
-                <li><a href="index.html" className="dropdown-item">My Account </a></li>
-                <li><a href="index.html" className="dropdown-item">404 Error </a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div className="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
-          <ul className="d-flex justify-content-end list-unstyled m-0">
-            <li>
-              <a href="#" className="p-2 mx-1">
-                <svg width={24} height={24}><use xlinkHref="#user" /></svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="p-2 mx-1">
-                <svg width={24} height={24}><use xlinkHref="#wishlist" /></svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="p-2 mx-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                <svg width={24} height={24}><use xlinkHref="#shopping-bag" /></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
+  <Header />
   <section style={{backgroundImage: 'url("src/assets/images/banner-1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
     <div className="container-lg">
       <div className="row">
         <div className="col-lg-6 pt-5 mt-5">
-          <h2 className="display-1 ls-1"><span className="fw-bold text-primary">Propulser</span> l'avenir ferroviaire <span className="fw-bold">de l'Afrique</span></h2>
-          <p className="fs-4">Dignissim massa diam elementum.</p>
+          <h2 className="display-1 ls-1"><span className="fw-bold text-secondary">Propulser</span> l'avenir ferroviaire <span className="fw-bold">de l'Afrique</span></h2>
+          <p className="fs-4">Expertise et innovation au service des infrastructures ferroviaires.</p>
           <div className="d-flex gap-3">
-            <a href="#" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
-            <a href="#" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Join Now</a>
+            <a href="#" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3"> Nos expertises</a>
+            <a href="#" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Contactez NOUS</a>
           </div>
           <div className="row my-5">
             <div className="col">
@@ -359,8 +264,9 @@ const Index: React.FC = () => {
               </div>
               <div className="col-md-9">
                 <div className="card-body p-0">
-                  <h5 className="text-light">Fresh from farm</h5>
-                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                <h5 className="text-light">Expertise ferroviaire</h5>
+<p className="card-text">Solutions innovantes pour des infrastructures performantes.</p>
+
                 </div>
               </div>
             </div>
@@ -374,8 +280,9 @@ const Index: React.FC = () => {
               </div>
               <div className="col-md-9">
                 <div className="card-body p-0">
-                  <h5 className="text-light">100% Organic</h5>
-                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                <h5 className="text-light">Fiabilité à 100%</h5>
+<p className="card-text">Des solutions ferroviaires durables et performantes.</p>
+
                 </div>
               </div>
             </div>
@@ -389,8 +296,9 @@ const Index: React.FC = () => {
               </div>
               <div className="col-md-9">
                 <div className="card-body p-0">
-                  <h5 className="text-light">Free delivery</h5>
-                  <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+                <h5 className="text-light">Solutions sur mesure</h5>
+<p className="card-text">Expertise et ingénierie pour vos projets ferroviaires.</p>
+
                 </div>
               </div>
             </div>
@@ -400,79 +308,76 @@ const Index: React.FC = () => {
     </div>
   </section>
   <section className="py-5 overflow-hidden">
-    <div className="container-lg">
-      <div className="row">
-        <div className="col-md-12">
-          <div className="section-header d-flex flex-wrap justify-content-between mb-5">
-            <h2 className="section-title">Category</h2>
-            <div className="d-flex align-items-center">
-              <a href="#" className="btn btn-primary me-2">View All</a>
-              <div className="swiper-buttons">
-                <button className="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
-                <button className="swiper-next category-carousel-next btn btn-yellow">❯</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12">
-          <div className="category-carousel swiper">
-            <div className="swiper-wrapper">
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assetsimages/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="/assets/images/category-thumb-2.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Breads &amp; Sweets</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-3.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-4.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Beverages</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-5.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-6.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Breads</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-7.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-8.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Breads &amp; Sweets</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Beverages</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Meat Products</h4>
-              </a>
-              <a href="category.html" className="nav-link swiper-slide text-center">
-                <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
-                <h4 className="fs-6 mt-3 fw-normal category-title">Breads</h4>
-              </a>
+  <div className="container-lg">
+ 
+    <div className="row bg-gray-transparent py-3 mb-5">
+    <div className="col-md-12 d-flex justify-content-around align-items-center">
+  <div className="icon-container">
+    <div className="icon-background bg-green">
+      <img src="src/assets/images/laptop.png" alt="Icône 1" className="icon" height={100} width={100}/>
+    </div>
+    <p className="icon-text">Les Ausculations</p>
+  </div>
+  <div className="icon-container">
+    <div className="icon-background bg-yellow">
+      <img src="src/assets/images/gears.png" alt="Icône 2" className="icon"  height={90} width={90}/>
+    </div>
+    <p className="icon-text">La Topographie</p>
+  </div>
+  <div className="icon-container">
+    <div className="icon-background bg-red">
+    <img src="src/assets/images/sliders.png" alt="Icône 2" className="icon" height={90} width={90} />
+    </div>
+    <p className="icon-text">Etudes ferroviaires</p>
+  </div>
+  <div className="icon-container">
+    <div className="icon-background bg-orange">
+      <img src="src/assets/images/yelp.png" alt="Icône 3" className="icon" height={90} width={90} />
+    </div>
+    <p className="icon-text">
+BIM - Scanner 3D</p>
+  </div>
+  <div className="icon-container">
+    <div className="icon-background bg-green">
+      <img src="src/assets/images/hook.png" alt="Icône 4" className="icon"  height={90} width={90}/>
+    </div>
+    <p className="icon-text">Vrd et Aménagement</p>
+  </div>
+</div>
+
+
+    </div>
+
+  
+    <div className="row">
+      <div className="col-md-12">
+        <div className="section-header d-flex flex-wrap justify-content-between mb-5">
+          <h2 className="section-title">Category</h2>
+          <div className="d-flex align-items-center">
+            <a href="#" className="btn btn-primary me-2">View All</a>
+            <div className="swiper-buttons">
+              <button className="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
+              <button className="swiper-next category-carousel-next btn btn-yellow">❯</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <div className="row">
+      <div className="col-md-12">
+        <div className="category-carousel swiper">
+          <div className="swiper-wrapper">
+            <a href="category.html" className="nav-link swiper-slide text-center">
+              <img src="src/assets/images/category-thumb-1.jpg" className="rounded-circle" alt="Category Thumbnail" />
+              <h4 className="fs-6 mt-3 fw-normal category-title">Fruits &amp; Veges</h4>
+            </a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   <section className="pb-5">
     <div className="container-lg">
       <div className="row">
@@ -2028,131 +1933,7 @@ const Index: React.FC = () => {
       </div>
     </div>
   </section>
-  <footer className="py-5">
-    <div className="container-lg">
-      <div className="row">
-        <div className="col-lg-3 col-md-6 col-sm-6">
-          <div className="footer-menu">
-            <img src="images/logo.svg" width={240} height={70} alt="logo" />
-            <div className="social-links mt-3">
-              <ul className="d-flex list-unstyled gap-2">
-                <li>
-                  <a href="#" className="btn btn-outline-light">
-                    <svg width={16} height={16}><use xlinkHref="#facebook" /></svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="btn btn-outline-light">
-                    <svg width={16} height={16}><use xlinkHref="#twitter" /></svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="btn btn-outline-light">
-                    <svg width={16} height={16}><use xlinkHref="#youtube" /></svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="btn btn-outline-light">
-                    <svg width={16} height={16}><use xlinkHref="#instagram" /></svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="btn btn-outline-light">
-                    <svg width={16} height={16}><use xlinkHref="#amazon" /></svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-2 col-sm-6">
-          <div className="footer-menu">
-            <h5 className="widget-title">Organic</h5>
-            <ul className="menu-list list-unstyled">
-              <li className="menu-item">
-                <a href="#" className="nav-link">About us</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Conditions </a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Our Journals</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Careers</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Affiliate Programme</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Ultras Press</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-md-2 col-sm-6">
-          <div className="footer-menu">
-            <h5 className="widget-title">Quick Links</h5>
-            <ul className="menu-list list-unstyled">
-              <li className="menu-item">
-                <a href="#" className="nav-link">Offers</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Discount Coupons</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Stores</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Track Order</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Shop</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Info</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-md-2 col-sm-6">
-          <div className="footer-menu">
-            <h5 className="widget-title">Customer Service</h5>
-            <ul className="menu-list list-unstyled">
-              <li className="menu-item">
-                <a href="#" className="nav-link">FAQ</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Contact</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Privacy Policy</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Returns &amp; Refunds</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Cookie Guidelines</a>
-              </li>
-              <li className="menu-item">
-                <a href="#" className="nav-link">Delivery Information</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6 col-sm-6">
-          <div className="footer-menu">
-            <h5 className="widget-title">Subscribe Us</h5>
-            <p>Subscribe to our newsletter to get updates about our grand offers.</p>
-            <form className="d-flex mt-3 gap-0" action="index.html">
-              <input className="form-control rounded-start rounded-0 bg-light" type="email" placeholder="Email Address" aria-label="Email Address" />
-              <button className="btn btn-dark rounded-end rounded-0" type="submit">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <Footer />
   <div id="footer-bottom">
     <div className="container-lg">
       <div className="row">
