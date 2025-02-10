@@ -232,7 +232,7 @@ const Index: React.FC = () => {
     </div>
   </div>
   <Header />
-  <section style={{backgroundImage: 'url("src/assets/images/banner-1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+  <section style={{backgroundImage: 'url("src/assets/images/trainew2.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
     <div className="container-lg">
       <div className="row">
       <div className="col-lg-6 pt-5 mt-5">
