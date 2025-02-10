@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Index from './pages/Index';
 import Story from './pages/story';
 import Dump from './pages/dump';
+import VrdAm from './pages/vrdame';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" Component={Login} />
         <Route path="/story" Component={Story} />
         <Route path="/dump" Component={Dump} />
+        <Route path="/vrdam" Component={VrdAm} />
 
       </Routes>
     </Router>

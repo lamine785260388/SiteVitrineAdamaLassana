@@ -28,8 +28,8 @@ const Header: React.FC = () => {
           <div className="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
             <div className="d-flex align-items-center my-3 my-sm-0">
               <a href="index.html">
-                Dynamic Africa logo
-                {/* <img src="src/assets/images/logo.jpg" alt="logo" className="img-fluid" height={60} width={60} /> */}
+                
+                <img src="src/assets/images/logonew.jpeg" alt="logo" className="img-fluid" height={20} width={80} />
               </a>
             </div>
             {/* <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
                   <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Présentation" : "Presentation"}</a></li>
                 
                   <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Infrastructures et le matériel roulant" : "Infrastructure and rolling stock"}</a></li>
-                  <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Travaux VRD et aménagement" : "VRD and Development Works"}</a></li>
+                  <li><a href="vrdam" className="dropdown-item">{language === "Français" ? "Travaux VRD et aménagement" : "VRD and Development Works"}</a></li>
                   <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Contact" : "Contact"}</a></li>
                 </ul>
               </li>

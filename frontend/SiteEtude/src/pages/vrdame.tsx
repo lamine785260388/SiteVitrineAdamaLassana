@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-const Index: React.FC = () => {
+const VrdAm: React.FC = () => {
   const [language, setLanguage] = useState("Français");
 
   // Récupérer la langue depuis sessionStorage au chargement de la page
@@ -232,164 +232,125 @@ const Index: React.FC = () => {
     </div>
   </div>
   <Header />
-  <section style={{backgroundImage: 'url("src/assets/images/trainew2.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}} className="marginsec">
-    <div className="container-lg">
-      <div className="row">
-      <div className="col-lg-6 pt-5 mt-5">
-      <h2 className="display-1 ls-1">
-  <span className="fw-bold text-secondary">
-    {language === "Français" ? "Propulser" : "Driving"}
-  </span>
-  {language === "Français" ? " l'avenir du ferroviaire et du génie civil" : " the future of rail and civil engineering"}
-  <span className="fw-bold"> {language === "Français" ? "en Afrique" : "in Africa"}</span>
-</h2>;
-
-<p className="fs-4 bg-primary">
-  {language === "Français" 
-    ? "Expertise et innovation au service des infrastructures ferroviaires, du matériel roulant et du génie civil"
-    : "Expertise and innovation serving railway infrastructure, rolling stock, and civil engineering"}
-  <span className="fw-bold">{language === "Français" ? "chez RAIL DYNAMIC AFRICA" : "at RAIL DYNAMIC AFRICA"}</span>.
-</p>
-<div className="d-flex gap-3">
-  {language === "Français" ? (
-    <>
-      <a href="#" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Nos expertises</a>
-      <a href="#" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Contactez-nous</a>
-    </>
-  ) : (
-    <>
-      <a href="#" className="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Our Expertise</a>
-      <a href="#" className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Contact Us</a>
-    </>
-  )}
-</div>
-<br />
-  {/* <div className="row my-5">
-    <div className="col">
-      <div className="row text-dark">
-        <div className="col-auto"><p className="fs-1 fw-bold lh-sm mb-0">14k+</p></div>
-        <div className="col"><p className="text-uppercase lh-sm mb-0">Projets réalisés</p></div>
+  
+  <section className="container my-5">
+    <div className="row align-items-center">
+      <div className="col-md-6">
+        <h2 className="mb-4">{language==="Français"?("Travaux d’Aménagement, Voirie et Réseaux Divers (VRD)"):"Development, Roadworks, and Various Networks (VRD)"}</h2>
+        <p>
+          {language==="Français"?(`Notre entreprise vous accompagne dans la réalisation de vos projets d’aménagement urbain et paysager, 
+          en garantissant des infrastructures durables et adaptées à vos besoins. Nous intervenons sur une large 
+          gamme de travaux liés à la voirie et aux réseaux divers (VRD), en assurant des prestations de qualité conformes 
+          aux normes en vigueur.`):`Our company supports you in the realization of your urban and landscape development projects, ensuring sustainable infrastructures tailored to your needs. We operate across a wide range of roadworks and various network (VRD) projects, delivering high-quality services that comply with current regulations.`}
+       
+        </p>
+        
+          {language==="Français"?(<ul className="list-unstyled"><li>✅ <strong>Travaux de voirie :</strong> création et réhabilitation de routes, trottoirs, parkings, pistes cyclables...</li>
+          <li>✅ <strong>Réseaux divers :</strong> assainissement, eau potable, électricité, télécommunication, gaz...</li>
+          <li>✅ <strong>Terrassement et aménagements :</strong> préparation des sols, nivellement, bordures, pavage...</li>
+          <li>✅ <strong>Espaces publics et privés :</strong> lotissements, zones industrielles, parcs, jardins...</li>
+          <li>✅ <strong>Accessibilité et sécurité :</strong> conformité PMR pour les voiries et infrastructures.</li> </ul>):(<ul className="list-unstyled">
+  <li>✅ <strong>Roadworks:</strong> Construction and rehabilitation of roads, sidewalks, parking lots, bike lanes...</li>
+  <li>✅ <strong>Various networks:</strong> Sanitation, drinking water supply, electricity, telecommunications, gas...</li>
+  <li>✅ <strong>Earthworks and development:</strong> Soil preparation, leveling, curbs, paving...</li>
+  <li>✅ <strong>Public and private spaces:</strong> Housing estates, industrial zones, parks, gardens...</li>
+  <li>✅ <strong>Accessibility and safety:</strong> Compliance with PRM (Persons with Reduced Mobility) standards for roads and infrastructure.</li>
+</ul>
+)}
+        
+        <p className="mt-3">
+        {language==="Français"?(`  Nous travaillons en collaboration avec les collectivités, les entreprises et les particuliers pour concevoir 
+          et réaliser des projets qui allient esthétisme, fonctionnalité et respect de l’environnement.`):(`We work in collaboration with local authorities, businesses, and individuals to design and execute projects that combine aesthetics, functionality, and environmental respect.`)}
+        </p>
+        <a href="#contact" className="btn btn-primary">Contactez-nous</a>
       </div>
-    </div>
-    <div className="col">
-      <div className="row text-dark">
-        <div className="col-auto"><p className="fs-1 fw-bold lh-sm mb-0">50k+</p></div>
-        <div className="col"><p className="text-uppercase lh-sm mb-0">Clients satisfaits</p></div>
+      <div className="col-md-6">
+        <img 
+          src="src/assets/images/vrdAme.jpg" 
+          alt="Travaux VRD" 
+          className="img-fluid rounded shadow"
+        />
       </div>
-    </div>
-    <div className="col">
-      <div className="row text-dark">
-        <div className="col-auto"><p className="fs-1 fw-bold lh-sm mb-0">10+</p></div>
-        <div className="col"><p className="text-uppercase lh-sm mb-0">Chantiers en cours</p></div>
-      </div>
-    </div>
-  </div> */}
-</div>
-
-      </div>
-      <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center"> 
-  <div className="col">
-    <div className="card border-0 bg-primary rounded-0 p-4 text-light">
-      <div className="row">
-        <div className="col-md-3 text-center">
-          <svg width={60} height={60}><use xlinkHref="#fresh" /></svg>
-        </div>
-        <div className="col-md-9">
-          <div className="card-body p-0">
-            <h5 className="text-light">
-              {language === "Français" ? "Expertise ferroviaire" : "Railway Expertise"}
-            </h5>
-            <p className="card-text">
-              {language === "Français" ? "Solutions innovantes pour des infrastructures performantes." : "Innovative solutions for high-performance infrastructure."}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div className="col">
-    <div className="card border-0 bg-secondary rounded-0 p-4 text-light">
-      <div className="row">
-        <div className="col-md-3 text-center">
-          <svg width={60} height={60}><use xlinkHref="#organic" /></svg>
-        </div>
-        <div className="col-md-9">
-          <div className="card-body p-0">
-            <h5 className="text-light">
-              {language === "Français" ? "Fiabilité à 100%" : "100% Reliability"}
-            </h5>
-            <p className="card-text">
-              {language === "Français" ? "Des solutions ferroviaires durables et performantes." : "Sustainable and high-performance railway solutions."}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div className="col">
-    <div className="card border-0 bg-danger rounded-0 p-4 text-light">
-      <div className="row">
-        <div className="col-md-3 text-center">
-          <svg width={60} height={60}><use xlinkHref="#delivery" /></svg>
-        </div>
-        <div className="col-md-9">
-          <div className="card-body p-0">
-            <h5 className="text-light">
-              {language === "Français" ? "Solutions sur mesure" : "Tailored Solutions"}
-            </h5>
-            <p className="card-text">
-              {language === "Français" ? "Expertise  au service de vos projets VRD et Aménagement." : "Expertise  for your civil engineering and development projects."}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
     </div>
   </section>
-  <section className="py-5 overflow-hidden">
-  <div className="container-lg">
  
-    <div className="row bg-gray-transparent py-3 mb-5">
-    <div className="col-md-12 d-flex justify-content-around align-items-center">
-  <div className="icon-container">
-    <div className="icon-background bg-red">
-      <img src="src/assets/images/sliders.png" alt="Études Ferroviaires" className="icon" height={90} width={90} />
-    </div>
-    <p className="icon-text">{language === "Français"?("Études Ferroviaires"):"Rail Studies"}</p>
-  </div>
-
-  <div className="icon-container">
-    <div className="icon-background bg-green">
-      <img src="src/assets/images/hook.png" alt="VRD Aménagement" className="icon" height={100} width={100} />
-    </div>
-    <p className="icon-text">{language === "Français"?("VRD Aménagement"):("Civil Engineering & Development")}</p>
-  </div>
-</div>
-
-
-    </div>
+  
+ 
 
   
-   
-    
+
+
+  <section className="py-5">
+  <div className="container-lg">
+    <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
+      <div className="col">
+        <div className="card mb-3 border border-dark-subtle p-3">
+          <div className="text-dark mb-3">
+            <svg width={32} height={32}><use xlinkHref="#infrastructure" /></svg>
+          </div>
+          <div className="card-body p-0">
+            <h5>{language==="Français"?("Infrastructures durables"):"Sustainable infrastructures"}</h5>
+            <p className="card-text">{language==="Français"?(`Conception et réalisation d’infrastructures VRD adaptées aux besoins urbains et ferroviaires.`):(`Design and construction of roadworks and utility infrastructures tailored to urban and railway needs.`)}</p>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card mb-3 border border-dark-subtle p-3">
+          <div className="text-dark mb-3">
+            <svg width={32} height={32}><use xlinkHref="#secure" /></svg>
+          </div>
+          <div className="card-body p-0">
+            <h5>{language==="Français"?(`Normes et Sécurité`):`Standards and Safety`}</h5>
+            <p className="card-text">{language==="Français"?(`Respect des réglementations en vigueur pour garantir des infrastructures fiables et sécurisées.`):(`Compliance with current regulations to ensure reliable and secure infrastructures`)}</p>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card mb-3 border border-dark-subtle p-3">
+          <div className="text-dark mb-3">
+            <svg width={32} height={32}><use xlinkHref="#quality" /></svg>
+          </div>
+          <div className="card-body p-0">
+            <h5>Expertise Ferroviaire</h5>
+            <p className="card-text">Études et interventions spécialisées sur les réseaux ferroviaires et leur aménagement.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card mb-3 border border-dark-subtle p-3">
+          <div className="text-dark mb-3">
+            <svg width={32} height={32}><use xlinkHref="#savings" /></svg>
+          </div>
+          <div className="card-body p-0">
+            <h5>Optimisation des coûts</h5>
+            <p className="card-text">Solutions économiques et durables pour une gestion efficace des travaux d’aménagement.</p>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card mb-3 border border-dark-subtle p-3">
+          <div className="text-dark mb-3">
+            <svg width={32} height={32}><use xlinkHref="#offers" /></svg>
+          </div>
+          <div className="card-body p-0">
+            <h5>Accompagnement personnalisé</h5>
+            <p className="card-text">Un suivi de projet sur-mesure, de la conception à la réalisation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
- 
   <Footer />
   <div id="footer-bottom">
     <div className="container-lg">
       <div className="row">
         <div className="col-md-6 copyright">
-          <p>© 2025 Raily Dynamic Africa. All rights reserved.</p>
+          <p>© 2024 Organic. All rights reserved.</p>
         </div>
         <div className="col-md-6 credit-link text-start text-md-end">
-          <p> Développez par  <a href="https://github.com/lamine785260388" target="_blank">Mr Traore</a> </p>
+          <p>HTML Template by <a href="https://templatesjungle.com/">TemplatesJungle</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a> </p>
         </div>
       </div>
     </div>
@@ -399,4 +360,4 @@ const Index: React.FC = () => {
   );
 };
 
-export default Index;
+export default VrdAm;
