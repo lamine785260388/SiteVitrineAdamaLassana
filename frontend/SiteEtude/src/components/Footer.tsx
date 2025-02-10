@@ -4,6 +4,7 @@ const Footer: React.FC = () => {
   
 
   return (
+    <>
     <footer className="py-5">
     <div className="container-lg">
       <div className="row">
@@ -65,7 +66,19 @@ const Footer: React.FC = () => {
       </div>
     </div>
   </footer>
-
+   <div id="footer-bottom">
+   <div className="container-lg">
+     <div className="row">
+       <div className="col-md-6 copyright">
+         <p>© 2025 Raily Dynamic Africa. All rights reserved.</p>
+       </div>
+       <div className="col-md-6 credit-link text-start text-md-end">
+         <p> Développez par  <a href="https://github.com/lamine785260388" target="_blank">Mr Traore</a> </p>
+       </div>
+     </div>
+   </div>
+ </div>
+ </>
   );
 };
 
