@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
         <div className="footer-menu">
   {/* Logo de la page */}
   <div className="logo-section fw-bold" style={{color:'blue', fontSize:'20px'}}>
-    {/* <img src="src/assets/images/logo.jpeg" width={240} height={70} alt="logo" /> */}
-    Raily Dynamic Africa
+    <img src="src/assets/images/logonew.jpeg" width={240} height={70} alt="logo" />
+    
   </div>
 
   {/* Section Contact et Adresse */}

@@ -311,8 +311,8 @@ const VrdAm: React.FC = () => {
             <svg width={32} height={32}><use xlinkHref="#quality" /></svg>
           </div>
           <div className="card-body p-0">
-            <h5>Expertise Ferroviaire</h5>
-            <p className="card-text">Études et interventions spécialisées sur les réseaux ferroviaires et leur aménagement.</p>
+            <h5>{language==="Français"?(`Expertise Ferroviaire`):'Railway Expertise'}</h5>
+            <p className="card-text">{language==="Français"?(`Études et interventions spécialisées sur les réseaux ferroviaires et leur aménagement.`):(`Specialized studies and interventions on railway networks and their development.`)}</p>
           </div>
         </div>
       </div>
@@ -322,8 +322,8 @@ const VrdAm: React.FC = () => {
             <svg width={32} height={32}><use xlinkHref="#savings" /></svg>
           </div>
           <div className="card-body p-0">
-            <h5>Optimisation des coûts</h5>
-            <p className="card-text">Solutions économiques et durables pour une gestion efficace des travaux d’aménagement.</p>
+            <h5>{language==="Français"?(`Optimisation des coûts`):`Cost Optimization`}</h5>
+            <p className="card-text">{language==="Français"?(`Solutions économiques et durables pour une gestion efficace des travaux d’aménagement.`):(`Economic and sustainable solutions for efficient management of development works.`)}</p>
           </div>
         </div>
       </div>
@@ -333,8 +333,8 @@ const VrdAm: React.FC = () => {
             <svg width={32} height={32}><use xlinkHref="#offers" /></svg>
           </div>
           <div className="card-body p-0">
-            <h5>Accompagnement personnalisé</h5>
-            <p className="card-text">Un suivi de projet sur-mesure, de la conception à la réalisation.</p>
+            <h5>{language==="Français"?(`Accompagnement personnalisé`):`Personalized Support`}</h5>
+            <p className="card-text">{language==="Français"?(`Un suivi de projet sur-mesure, de la conception à la réalisation.`):`Tailor-made project monitoring, from design to completion.`}</p>
           </div>
         </div>
       </div>
