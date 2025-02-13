@@ -959,7 +959,7 @@ const Index: React.FC = () => {
               
               <h6 className="display-1 ls-1 scrolling-text">
                 <span >
-                  {language === "Français" ? "Propulser" : "Driving"}
+                  {language === "Français" ? "Bienvenue chez Rail Dynamics Africa. Propulser" : " Welcome to Rail Dynamics Africa. Driving"}
                 </span>
                 {language === "Français"
                   ? " l'avenir du ferroviaire et du génie civil"
