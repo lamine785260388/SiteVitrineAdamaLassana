@@ -1195,9 +1195,9 @@ With the rise of ongoing and upcoming railway projects, we offer a comprehensive
       <div className="row">
         <div className="section-header d-flex align-items-center justify-content-between my-4 ">
         <div className="scrolling-title-container">
-              <h2 className="section-title scrolling-title">Nos Dernières Actualités</h2>
+              <h2 className="section-title scrolling-title">{language==="Français"?("Nos Dernières Actualités"):"Our Latest News"}</h2>
             </div>
-          <a href="#" className="btn btn-primary">Plus</a>
+          <a href="#" className="btn btn-primary">{language==="Français"?"Plus":"more"}</a>
         </div>
       </div>
       <div className="row">

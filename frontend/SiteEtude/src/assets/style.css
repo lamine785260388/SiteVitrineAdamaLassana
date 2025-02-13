@@ -30,9 +30,12 @@ This is main CSS file that contains custom style rules used in this template
   position: relative;
   animation: marquee 30s linear infinite;
 color: white;
+font-size: 25px;
 }
 
-
+.marginimg{
+  margin-top:-45px;
+}
 .marginsec{
   margin-top:-150px !important;
 }
