@@ -13,6 +13,61 @@ This is main CSS file that contains custom style rules used in this template
 /*--------------------------------------------------------------
 /** VARIABLES
 --------------------------------------------------------------*/
+/* debutmoifd */
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: marquee 30s linear infinite;
+color: white;
+}
+
+
+.marginsec{
+  margin-top:-150px !important;
+}
+
+.news-section {
+  background-color: #f8f9fa; /* Couleur de fond légère */
+  padding: 60px 0;
+  overflow: hidden; /* Cache le texte qui dépasse */
+}
+
+.scrolling-title-container {
+  width: 100%; /* Prend toute la largeur de la page */
+  overflow: hidden; /* Cache le texte qui dépasse */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.scrolling-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  display: inline-block; /* Permet au texte de défiler horizontalement */
+  padding-left: 100%; /* Démarre le texte hors de l'écran */
+  animation: scrollTitle 30s linear infinite; /* Animation de défilement */
+}
+
+@keyframes scrollTitle {
+  0% {
+    transform: translateX(0); /* Commence à droite */
+  }
+  100% {
+    transform: translateX(-100%); /* Termine à gauche */
+  }
+}
+/* fnModif */
+
 body {
   --heading-font        : "Inter", sans-serif;
   --bs-link-color: #333;

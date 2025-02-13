@@ -949,14 +949,16 @@ const Index: React.FC = () => {
           backgroundImage: 'url("src/assets/images/trainew2.jpg")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          height:"800px"
         }}
-        className="marginsec"
+     
       >
         <div className="container-lg">
           <div className="row">
             <div className="col-lg-6 pt-5 mt-5">
-              <h2 className="display-1 ls-1">
-                <span className="fw-bold text-secondary">
+              
+              <h6 className="display-1 ls-1 scrolling-text">
+                <span >
                   {language === "Français" ? "Propulser" : "Driving"}
                 </span>
                 {language === "Français"
@@ -966,9 +968,9 @@ const Index: React.FC = () => {
                   {" "}
                   {language === "Français" ? "en Afrique" : "in Africa"}
                 </span>
-              </h2>
+              </h6> <br /><br /><br /><br /><br /> <br /><br /><br />
               ;
-              <p className="fs-4 bg-primary">
+              {/* <p className="fs-4 bg-primary">
                 {language === "Français"
                   ? "Expertise et innovation au service des infrastructures ferroviaires, du matériel roulant et du génie civil"
                   : "Expertise and innovation serving railway infrastructure, rolling stock, and civil engineering"}
@@ -978,7 +980,7 @@ const Index: React.FC = () => {
                     : "at RAIL DYNAMIC AFRICA"}
                 </span>
                 .
-              </p>
+              </p> */}
               <div className="d-flex gap-3">
                 {language === "Français" ? (
                   <>
@@ -993,6 +995,7 @@ const Index: React.FC = () => {
                       className="btn btn-dark text-uppercase fs-6 rounded-pill px-4 py-3 mt-3"
                     >
                       Contactez-nous
+                      
                     </a>
                   </>
                 ) : (
@@ -1047,6 +1050,7 @@ const Index: React.FC = () => {
                   <div className="col-md-9">
                     <div className="card-body p-0">
                       <h5 className="text-light">
+                        
                         {language === "Français"
                           ? "Expertise ferroviaire"
                           : "Railway Expertise"}
@@ -1116,7 +1120,36 @@ const Index: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="py-5 overflow-hidden">
+      <section className="container my-5 ">
+    <div className="row align-items-center">
+    <div className="col-md-6">
+        <img 
+          src="src/assets/images/vrdAme.jpg" 
+          alt="Travaux VRD" 
+          className="img-fluid rounded shadow"
+        />
+      </div>
+      <div className="col-md-6">
+        <h2 className="mb-4">{language==="Français"?("Présentation de RAIL DYNAMICS AFRICA"):"Presentation of RAIL DYNAMICS AFRICA"}</h2>
+        <p>
+          {language==="Français"?(`
+
+RAIL DYNAMICS AFRICA est le fruit d’une expertise approfondie et d’une passion pour le développement des infrastructures ferroviaires en Afrique. Forts de nombreuses années d’expérience dans la conception et la mise en œuvre de projets ferroviaires et d’infrastructures de génie civil, nous nous positionnons comme un partenaire clé pour accompagner la croissance du secteur ferroviaire sur le continent.
+
+Face à l’essor des projets ferroviaires en cours et à venir, nous proposons une gamme complète de services allant de la conception à la planification, en passant par l’accompagnement à la réalisation. Notre engagement : offrir des solutions innovantes et adaptées aux besoins spécifiques de chaque client, en garantissant performance et durabilité.`):`RAIL DYNAMICS AFRICA is the result of deep expertise and a passion for the development of railway infrastructure in Africa. With many years of experience in the design and implementation of railway projects and civil engineering infrastructure, we position ourselves as a key partner in supporting the growth of the railway sector on the continent.
+
+With the rise of ongoing and upcoming railway projects, we offer a comprehensive range of services, from design to planning, including support throughout the implementation phase. Our commitment: to provide innovative solutions tailored to the specific needs of each client, ensuring performance and sustainability`}
+       
+        </p>
+   
+        
+    
+        <a href="#contact" className="btn btn-primary">Contactez-nous</a>
+      </div>
+     
+    </div>
+  </section>
+      {/* <section className="py-5 overflow-hidden">
         <div className="container-lg">
           <div className="row bg-gray-transparent py-3 mb-5">
             <div className="col-md-12 d-flex justify-content-around align-items-center">
@@ -1156,13 +1189,15 @@ const Index: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section id="latest-blog" className="pb-4">
+      </section> */}
+      <section id="latest-blog" className="pb-4 marginsec">
     <div className="container-lg">
       <div className="row">
-        <div className="section-header d-flex align-items-center justify-content-between my-4">
-          <h2 className="section-title">Nos Dernières Actualités</h2>
-          <a href="#" className="btn btn-primary">Voir Tout</a>
+        <div className="section-header d-flex align-items-center justify-content-between my-4 ">
+        <div className="scrolling-title-container">
+              <h2 className="section-title scrolling-title">Nos Dernières Actualités</h2>
+            </div>
+          <a href="#" className="btn btn-primary">Plus</a>
         </div>
       </div>
       <div className="row">
