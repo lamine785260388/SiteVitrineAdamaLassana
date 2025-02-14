@@ -13,6 +13,9 @@ function App() {
     <Router>
       <Routes>
       <Route path="/" Component={Index} />
+      <Route path="/SiteVitrineAdamaLassana" Component={Index} />
+
+      
 
         <Route path="/login" Component={Login} />
         <Route path="/story" Component={Story} />
