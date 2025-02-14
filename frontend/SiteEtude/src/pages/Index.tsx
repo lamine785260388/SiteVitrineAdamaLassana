@@ -946,7 +946,7 @@ const Index: React.FC = () => {
       <Header />
       <section
         style={{
-          backgroundImage: 'url("src/assets/images/trainew2.jpg")',
+          backgroundImage: 'url("src/assets/images/accueil.jpeg")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           height:"800px"
@@ -957,7 +957,7 @@ const Index: React.FC = () => {
           <div className="row">
             <div className="col-lg-6 pt-5 mt-5">
               
-              <h6 className="display-1 ls-1 scrolling-text">
+              <h6 className="display-1 ls-1 scrolling-text text-dark fw-bold" style={{fontSize:'25px'}}>
                 <span >
                   {language === "Français" ? "Bienvenue chez Rail Dynamics Africa. Propulser" : " Welcome to Rail Dynamics Africa. Driving"}
                 </span>

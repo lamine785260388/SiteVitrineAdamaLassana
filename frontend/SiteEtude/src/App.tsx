@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Login from './pages/Login';
@@ -10,7 +8,6 @@ import Dump from './pages/dump';
 import VrdAm from './pages/vrdame';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <Router>
