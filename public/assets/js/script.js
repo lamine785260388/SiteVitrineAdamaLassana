@@ -144,13 +144,18 @@
 
   // init jarallax parallax
   var initJarallax = function() {
+    if (typeof jarallax !== "function") {
+      console.error("Jarallax n'est pas chargé correctement.");
+      return;
+    }
+  
     jarallax(document.querySelectorAll(".jarallax"));
-
+  
     jarallax(document.querySelectorAll(".jarallax-keep-img"), {
       keepImg: true,
     });
-  }
-
+  };
+  
   // document ready
   $(document).ready(function() {
     
