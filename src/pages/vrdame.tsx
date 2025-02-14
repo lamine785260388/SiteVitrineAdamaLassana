@@ -266,7 +266,7 @@ const VrdAm: React.FC = () => {
       </div>
       <div className="col-md-6">
         <img 
-          src="src/assets/images/vrdAme.jpg" 
+          src="./assets/images/vrdAme.jpg" 
           alt="Travaux VRD" 
           className="img-fluid rounded shadow"
         />

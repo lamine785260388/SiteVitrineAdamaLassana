@@ -946,7 +946,7 @@ const Index: React.FC = () => {
       <Header />
       <section
         style={{
-          backgroundImage: 'url("src/assets/images/accueil.jpeg")',
+          backgroundImage: 'url("./assets/images/accueil.jpeg")',
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           height:"800px"
@@ -1124,7 +1124,7 @@ const Index: React.FC = () => {
     <div className="row align-items-center">
     <div className="col-md-6">
         <img 
-          src="src/assets/images/vrdAme.jpg" 
+          src="./assets/images/vrdAme.jpg" 
           alt="Travaux VRD" 
           className="img-fluid rounded shadow"
         />
@@ -1189,7 +1189,7 @@ With the rise of ongoing and upcoming railway projects, we offer a comprehensive
             </div>
           </div>
         </div>
-      </section> */}
+      </section> */} <br /><br /> <br />
       <section id="latest-blog" className="pb-4 marginsec">
     <div className="container-lg">
       <div className="row">
@@ -1205,7 +1205,7 @@ With the rise of ongoing and upcoming railway projects, we offer a comprehensive
           <article className="post-item card border-0 shadow-sm p-3">
             <div className="image-holder zoom-effect">
               <a href="#">
-                <img src="../../src/assets/images/1-enhanced.png" alt="infrastructure ferroviaire" className="card-img-top" />
+                <img src="./assets/images/1-enhanced.png" alt="infrastructure ferroviaire" className="card-img-top" />
               </a>
             </div>
             <div className="card-body">
@@ -1226,7 +1226,7 @@ With the rise of ongoing and upcoming railway projects, we offer a comprehensive
           <article className="post-item card border-0 shadow-sm p-3">
             <div className="image-holder zoom-effect">
               <a href="#">
-                <img src="../../src/assets/images/2-enhanced (1).png" alt="chemin de fer durable" className="card-img-top" />
+                <img src="./assets/images/2-enhanced (1).png" alt="chemin de fer durable" className="card-img-top" />
               </a>
             </div>
             <div className="card-body">
@@ -1247,7 +1247,7 @@ With the rise of ongoing and upcoming railway projects, we offer a comprehensive
           <article className="post-item card border-0 shadow-sm p-3">
             <div className="image-holder zoom-effect">
               <a href="#">
-                <img src="../../src/assets/images/3-enhanced.png" alt="sécurité ferroviaire" className="card-img-top" />
+                <img src="./assets/images/3-enhanced.png" alt="sécurité ferroviaire" className="card-img-top" />
               </a>
             </div>
             <div className="card-body">
