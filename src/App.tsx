@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/" Component={Index} />
+      <Route path="/accueil" Component={Index} />
       <Route path="/SiteVitrineAdamaLassana" Component={Index} />
 
       
