@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="footer-menu">
   {/* Logo de la page */}
   <div className="logo-section fw-bold" style={{color:'blue', fontSize:'20px'}}>
-    <img src="src/assets/images/logonew.jpeg" width={240} height={70} alt="logo" />
+    <img src="./assets/images/logonew.jpeg" width={240} height={70} alt="logo" />
     
   </div>
 

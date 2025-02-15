@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             <div className="d-flex align-items-center my-3 my-sm-0">
               <a href="index.html">
                 
-                <img src="src/assets/images/logonew_transparent.png" alt="logo" className="img-fluid marginimg" height={100} width={150} />
+                <img src="./assets/images/logonew_transparent.png" alt="logo" className="img-fluid marginimg" height={100} width={150} />
               </a>
             </div>
             {/* <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

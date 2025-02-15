@@ -19,7 +19,7 @@ function App() {
         <Route path="/login" Component={Login} />
         <Route path="/story" Component={Story} />
         <Route path="/dump" Component={Dump} />
-        <Route path="/SiteVitrineAdamaLassana/vrdam" Component={VrdAm} />
+        <Route path="/vrdam" Component={VrdAm} />
 
       </Routes>
     </Router>
