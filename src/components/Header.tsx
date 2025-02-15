@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const Header: React.FC = () => {
   // Récupérer la langue depuis sessionStorage ou définir une valeur par défaut
   const [language, setLanguage] = useState(sessionStorage.getItem("language") || "Français");
@@ -70,7 +70,9 @@ const Header: React.FC = () => {
                   <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Présentation" : "Presentation"}</a></li>
                 
                   <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Infrastructures et le matériel roulant" : "Infrastructure and rolling stock"}</a></li>
-                  <li><a href="vrdam" className="dropdown-item">{language === "Français" ? "Travaux VRD et aménagement" : "VRD and Development Works"}</a></li>
+                  <li> <Link to="/vrdam" className="dropdown-item">
+    {language === "Français" ? "Travaux VRD et aménagement" : "VRD and Development Works"}
+  </Link></li>
                   <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Contact" : "Contact"}</a></li>
                 </ul>
               </li>
