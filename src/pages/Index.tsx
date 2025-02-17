@@ -1134,7 +1134,7 @@ const Index: React.FC = () => {
           width={1470}
         />
       </div>
-      <div className="col-md-6"> <br /> <br /><br />
+      <div className="col-md-6 "> <br /> <br /><br />
         <h2 className="mb-4">{language==="Français"?("Présentation de RAIL DYNAMICS AFRICA"):"Presentation of RAIL DYNAMICS AFRICA"}</h2>
         <p>
           {language==="Français"?(`
