@@ -14,24 +14,25 @@ This is main CSS file that contains custom style rules used in this template
 /** VARIABLES
 --------------------------------------------------------------*/
 /* debutmoifd */
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .scrolling-text {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  color: white;
+  font-size: 25px;
   animation: marquee 30s linear infinite;
-color: white;
-font-size: 25px;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 .marginimg{
   margin-top:-45px;
