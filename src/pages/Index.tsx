@@ -1122,7 +1122,7 @@ const Index: React.FC = () => {
           
           </div>
         </div>
-      </section>
+      </section> <br /> <br /><br />
       <section className="container my-5 ">
     <div className="row align-items-center">
     <div className="col-md-6"> <br /><br />
