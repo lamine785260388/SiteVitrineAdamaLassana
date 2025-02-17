@@ -948,8 +948,7 @@ const Index: React.FC = () => {
         style={{
           backgroundImage: 'url("./assets/images/accueil.jpeg")',
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          height:"800px"
+          backgroundSize: "cover"
         }}
      
       >
