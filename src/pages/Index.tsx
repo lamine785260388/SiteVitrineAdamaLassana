@@ -1125,14 +1125,16 @@ const Index: React.FC = () => {
       </section>
       <section className="container my-5 ">
     <div className="row align-items-center">
-    <div className="col-md-6">
+    <div className="col-md-6"> <br /><br />
         <img 
-          src="./assets/images/vrdAme.jpg" 
+          src="./assets/images/presentation.jpeg" 
           alt="Travaux VRD" 
           className="img-fluid rounded shadow"
+          height={980}
+          width={1470}
         />
       </div>
-      <div className="col-md-6">
+      <div className="col-md-6"> <br /> <br /><br />
         <h2 className="mb-4">{language==="Français"?("Présentation de RAIL DYNAMICS AFRICA"):"Presentation of RAIL DYNAMICS AFRICA"}</h2>
         <p>
           {language==="Français"?(`
