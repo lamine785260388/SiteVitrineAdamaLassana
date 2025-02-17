@@ -945,13 +945,16 @@ const Index: React.FC = () => {
       </div>
       <Header />
       <section
-        style={{
-          backgroundImage: 'url("./assets/images/accueil.jpeg")',
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}
-     
-      >
+  style={{
+    backgroundImage: 'url("./assets/images/accueil.jpeg")',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "100% 100%", // Adapte l'image à toute la section sans coupe
+    backgroundPosition: "center",
+    width: "100vw", // Prend toute la largeur de l'écran
+    height: "100vh" // Prend toute la hauteur de l'écran
+  }}
+>
+
         <div className="container-lg">
           <div className="row">
             <div className="col-lg-6 pt-5 mt-5">
@@ -967,7 +970,7 @@ const Index: React.FC = () => {
                   {" "}
                   {language === "Français" ? "en Afrique" : "in Africa"}
                 </span>
-              </h6> <br /><br /><br /><br /><br /> <br /><br /><br />
+              </h6> <br /><br /><br /><br /><br /> <br /><br /><br /> <br /><br /><br /> <br /><br /><br />
               ;
               {/* <p className="fs-4 bg-primary">
                 {language === "Français"
@@ -1014,7 +1017,7 @@ const Index: React.FC = () => {
                   </>
                 )}
               </div>
-              <br />
+              <br /> 
               {/* <div className="row my-5">
     <div className="col">
       <div className="row text-dark">
@@ -1038,6 +1041,58 @@ const Index: React.FC = () => {
             </div>
           </div>
           <div className="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center">
+          <div className="col">
+              <div className="card border-0 bg-danger rounded-0 p-4 text-light">
+                <div className="row">
+                  <div className="col-md-3 text-center">
+                    <svg width={60} height={60}>
+                      <use xlinkHref="#delivery" />
+                    </svg>
+                  </div>
+                  <div className="col-md-9">
+                    <div className="card-body p-0">
+                      <h5 className="text-light">
+                        {language === "Français"
+                          ? "Solutions sur mesure"
+                          : "Tailored Solutions"}
+                      </h5>
+                      <p className="card-text">
+                        {language === "Français"
+                          ? "Expertise  au service de vos projets VRD et Aménagement."
+                          : "Expertise  for your civil engineering and development projects."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+
+            <div className="col">
+              <div className="card border-0 bg-light rounded-0 p-4 text-dark">
+                <div className="row">
+                  <div className="col-md-3 text-center">
+                    <svg width={60} height={60}>
+                      <use xlinkHref="#organic" />
+                    </svg>
+                  </div>
+                  <div className="col-md-9">
+                    <div className="card-body p-0">
+                      <h5 className="text-dark">
+                        {language === "Français"
+                          ? "Fiabilité à 100%"
+                          : "100% Reliability"}
+                      </h5>
+                      <p className="card-text">
+                        {language === "Français"
+                          ? "Des solutions ferroviaires durables et performantes."
+                          : "Sustainable and high-performance railway solutions."}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="col">
               <div className="card border-0 bg-primary rounded-0 p-4 text-light">
                 <div className="row">
@@ -1064,58 +1119,7 @@ const Index: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            <div className="col">
-              <div className="card border-0 bg-secondary rounded-0 p-4 text-light">
-                <div className="row">
-                  <div className="col-md-3 text-center">
-                    <svg width={60} height={60}>
-                      <use xlinkHref="#organic" />
-                    </svg>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="card-body p-0">
-                      <h5 className="text-light">
-                        {language === "Français"
-                          ? "Fiabilité à 100%"
-                          : "100% Reliability"}
-                      </h5>
-                      <p className="card-text">
-                        {language === "Français"
-                          ? "Des solutions ferroviaires durables et performantes."
-                          : "Sustainable and high-performance railway solutions."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col">
-              <div className="card border-0 bg-danger rounded-0 p-4 text-light">
-                <div className="row">
-                  <div className="col-md-3 text-center">
-                    <svg width={60} height={60}>
-                      <use xlinkHref="#delivery" />
-                    </svg>
-                  </div>
-                  <div className="col-md-9">
-                    <div className="card-body p-0">
-                      <h5 className="text-light">
-                        {language === "Français"
-                          ? "Solutions sur mesure"
-                          : "Tailored Solutions"}
-                      </h5>
-                      <p className="card-text">
-                        {language === "Français"
-                          ? "Expertise  au service de vos projets VRD et Aménagement."
-                          : "Expertise  for your civil engineering and development projects."}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>
