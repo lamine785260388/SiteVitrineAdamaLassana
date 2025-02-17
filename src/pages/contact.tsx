@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Contact: React.FC = () => {
-  const [language, setLanguage] = useState("Français");
-
-  // Récupérer la langue depuis sessionStorage au chargement de la page
-  useEffect(() => {
-    const savedLanguage = sessionStorage.getItem("language");
-    if (savedLanguage) {
-      setLanguage(savedLanguage);
-    }
-}, []);
+  
 
 return (
     <>
