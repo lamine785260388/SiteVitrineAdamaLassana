@@ -5,6 +5,7 @@ import Index from './pages/Index';
 import Story from './pages/story';
 import Dump from './pages/dump';
 import VrdAm from './pages/vrdame';
+import Contact from './pages/contact';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/story" Component={Story} />
         <Route path="/dump" Component={Dump} />
         <Route path="/vrdam" Component={VrdAm} />
+        <Route path="/contact" Component={Contact} />
 
       </Routes>
     </Router>

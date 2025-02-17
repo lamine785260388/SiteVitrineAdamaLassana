@@ -73,7 +73,10 @@ const Header: React.FC = () => {
                   <li> <Link to="/vrdam" className="dropdown-item">
     {language === "Français" ? "Travaux VRD et aménagement" : "VRD and Development Works"}
   </Link></li>
-                  <li><a href="index.html" className="dropdown-item">{language === "Français" ? "Contact" : "Contact"}</a></li>
+                  
+                  <li> <Link to="/contact" className="dropdown-item">
+    {language === "Français" ? "Contact" : "Contact"}
+  </Link></li>
                 </ul>
               </li>
             </ul>
